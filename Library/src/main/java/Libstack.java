@@ -1,8 +1,18 @@
-import java.util.ArrayList;
-import java.util.List;
+public abstract class Libstack {
 
-public abstract class Libstack<Libstack> {
+	public Libstack() {
+		super();
 
-	List<Libstack> library = new ArrayList<Libstack>();
+	}
+
+	public static int id;
+
+	public static int getId() {
+		return id;
+	}
+
+	public static void setId(int id) {
+		Libstack.id = id;
+	}
 
 }

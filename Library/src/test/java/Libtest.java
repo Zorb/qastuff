@@ -7,13 +7,13 @@ import org.junit.Test;
 public class Libtest {
 	@Before
 	public void init() {
-		Book booktest = new Book("test", 423423, "gergre");
 
 	}
 
 	@Test
 	public void testlist() {
 		// TO-DO
+		Book booktest = new Book("test", 423423, "gergre");
 
 		fail("Not done");
 		assertNotNull("Title is empty", booktest.Title);
@@ -21,7 +21,7 @@ public class Libtest {
 
 	@Test
 	public void authortest() {
-		// TO-DO
+		Book booktest = new Book("test", 423423, "gergre");
 		fail("Not done");
 		assertNotNull("Title is empty", booktest.Title);
 	}
