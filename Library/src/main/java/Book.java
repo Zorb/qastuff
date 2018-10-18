@@ -1,5 +1,5 @@
 
-public class Book extends Libstack {
+public class Book {
 	String Title;
 	long ISBN;
 	String Author;

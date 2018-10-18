@@ -18,12 +18,28 @@ public class Runner2 {
 			{ "H", "H", "SP", "SP", "SP", "SP", "H", "H", "H", "H" }
 
 	};
-	String H = "Hit";
-	String S = "Stop";
-	String D = "Deal";
-	String SP = "Split";
+	static String H = "Hit";
+	static String S = "Stop";
+	static String D = "Double Down";
+	static String SP = "Split";
+	static boolean ace = false;
+	static boolean doubles = false;
 
-	public static void play() {
+	public static void play(int you, int you2, int dealer) {
+		int sum = you + you2;
+		if (you == 1 || you2 == 1) {
+			ace = true;
+		}
+		if (you == you2) {
+			doubles = true;
+		}
+		if (ace && doubles) {
+			System.out.println(SP);
+		} else if (ace) {
+			switch (sum) {
+			case 1:
 
+			}
+		}
 	}
 }
